@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EpifaniArt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,11 +20,14 @@
                 <li><a href="#personalizacion">personalizacion</a></li>
                 <li><a href="#contacto">contacto</a></li>
             </ul>
-            <dic class="carrito"><span id="contador">0</span></dic>
+            <div class="carrito">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="contador">0</span>
+            </div>
         </nav>
     </header>
 
-    <!--HERO-->
+    <!--HERO O SECCION DE VIENBENIDA-->
     <section id="hero">
         <h1>Diseña tu estilo</h1>
         <p>Camisetas, Gorras, Busos y accesorios personalizados</p>
@@ -54,14 +59,14 @@
     <section id="contacto">
         <h2>Contactanos</h2>
         <form>
-            <imput type="text" placeholder="Tu nombre">
-            <imput type="email" placeholder="Tu correo">
+            <input type="text" placeholder="Tu nombre">
+            <input type="email" placeholder="Tu correo">
             <textarea placeholder="Describe tu pedido"></textarea>
             <button type="submit">Enviar</button>
         </form>
-        <a href="https://wa.me/573117351221" target="_blank">
-            Escribenos por WhatsApp
-        </a>
+            <a href="https://wa.me/573117351221" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i> Escribenos por WhatsApp
+            </a>
     </section>
 
     <!--FOOTER-->
@@ -70,6 +75,7 @@
     </footer>
 
     <script src="script"></script>
-    
+
 </body>
+
 </html>
