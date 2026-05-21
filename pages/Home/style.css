@@ -293,3 +293,70 @@ footer {
 .producto button:hover {
     background-color: var(--negro);
 }
+
+
+/* PANEL CARRITO */
+#panel-carrito {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100%;
+    background-color: var(--blanco);
+    box-shadow: -4px 0 15px rgba(0,0,0,0.2);
+    padding: 30px 20px;
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+#panel-carrito h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: var(--negro);
+}
+
+#lista-carrito {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#lista-carrito li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+#lista-carrito li button {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    border: none;
+    padding: 4px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#total {
+    font-size: 18px;
+    color: var(--naranja);
+}
+
+#cerrar-carrito {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--negro);
+    color: var(--blanco);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#panel-carrito.abierto {
+    right: 0;
+}
+
